@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 gem 'pg'
 gem 'bootstrap-sass', '2.0.0'
+gem 'bcrypt-ruby'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -25,6 +26,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', 
+                :branch => 'rake_compatibility', group: :development
 
 group :test do 
 	gem 'capybara'
